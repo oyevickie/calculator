@@ -1,0 +1,17 @@
+
+<form [formGroup]="data" (ngSubmit)="submit()">
+
+First Name: <input type="text" formControlName="First">
+<br>
+Second Name: <input type="text" formControlName="Second">
+<br><br>
+<input type="submit">
+
+
+</form>
+
+
+<div>
+    <input type="submit" (click)="show()">
+</div>
+{{result}}

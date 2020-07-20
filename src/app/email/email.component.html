@@ -1,0 +1,16 @@
+<input type="text"  [formControl]="email">
+<input type="submit" (click)="show()">
+
+<br><br>
+{{update}}
+
+<form [formGroup]="data" (ngSubmit)="submit()">
+    <input type="text" formControlName="emailupdate" required minlength="5">
+    <div *ngIf="data.controls['emailupdate'].invalid && (data.controls['emailupdate'].dirty || data.controls['emailupdate'].touched)">
+        <div *ngIf="data.controls['emailupdate'].errors.required">Fill the Test Box</div>
+        <div *ngIf="data.controls['emailupdate'].errors.minlength">At least 5</div>
+    </div>
+    <!-- <input type="submit"> -->
+</form>
+
+{{this.data.controls['emailupdate'].value}}

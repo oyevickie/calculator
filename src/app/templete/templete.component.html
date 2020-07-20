@@ -1,0 +1,33 @@
+<!-- <p>templete works!</p>
+<form #form="ngForm" (ngSubmit)="details(form.value)">
+<label>Project Name</label>
+<input type="text" name="TextprojectName" ngModel>
+<input type="submit" (click)="details()">
+</form> -->
+
+
+<form #form="ngForm" (ngSubmit)="data(form.value)">
+        <label>Project Name</label>
+        <input type="text" name="Empname" ngModel>
+        <input type="text" name="Empid" ngModel>
+        <input type="text" name="Empde" ngModel>
+<input type="submit" (click)="data()">
+
+
+</form>
+<table>
+    <tr>
+        <th>Employee Name</th>
+        <th>Employee Id</th>
+        <th>Employee Designation</th>
+
+    </tr>
+
+    <tr>
+        <td>{{name}}</td>
+        <td>{{id}}</td>
+        <td>{{desig}}</td>
+    </tr>
+</table>
+
+{{dataa}}

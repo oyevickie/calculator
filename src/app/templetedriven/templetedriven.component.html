@@ -1,0 +1,8 @@
+<form #form="ngForm" (ngSubmit)="submit(form.value)">
+<input type="text" name="Username" [(ngModel)]="Username" required>
+<input type="password" name="password" [(ngModel)]="password" required>
+<input type="submit" [disabled]="form.invalid">
+</form>
+
+{{user}}
+{{pass}}
